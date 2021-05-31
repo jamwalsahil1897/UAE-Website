@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UAE Final Website</title>
+    <!-- MDB icon -->
+    <!--<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        /* Clearfix (clear floats) */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .footer-container {
+            margin: 16px;
+        }
+        
+        .container,
+        .sub-items-container {
+            display: flex;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        /*
+    .sub-items:hover {
+        border-bottom: 1px solid rgb(5, 119, 139);
+    }
+*/
+        
+        .sub-items {
+            position: relative;
+        }
+        
+        .sub-items:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #00AAA2;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .sub-items:hover:before {
+            visibility: visible;
+            width: 100%;
+        }
+        
+        .container {
+            width: auto;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 20px;
+        }
+        
+        .sub-items-container {
+            flex-direction: column;
+            align-items: center;
+            color: #00AAA2;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .header {
+            text-align: center
+        }
+        
+        .item {
+            align-items: center;
+            color: #2C3E50;
+            font-family: serif;
+        }
+        
+        #map {
+            height: 32vh;
+            margin: 16px 8px;
+        }
+        
+        @media(max-width: 700px) {
+            .container {
+                margin: auto;
+                flex-direction: column;
+            }
+            .item {
+                margin: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2 style="color: black; font-size: large; font-family: 'Courier New', Courier, monospace; text-align: center; background-color: silver;">FLAT 50% OFF + EXTRA 10% ON ALL PREPAID ORDERS! USE CODE:EXTRA10</h2>
+
+    <div class="b-example-divider"></div>
+
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <ul style="color: black;padding: auto;font-weight: bolder; font-size: larger;" class="nav justify-content-center">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">New Arrivals</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Clothing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bags</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Accessories</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Fragrance</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Face Masks</a>
+        </li>
+        <li class="nav-item">
+            <a style="color: red;" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sale</a>
+        </li>
+    </ul>
+    <hr>
+
+    <div style="color: white; background-color: pink; text-align: center; font-family: Arial, Helvetica, sans-serif;">
+        <h3>Hey, you're new here!</h3>
+        <p>Get 15% off everything when spend 20AED with code:EXTRA20</p>
+    </div>
+    <hr>
+
+    <section style="display: flex; flex-direction: column; height: 450px;padding: 3px 200px; justify-content: center; align-items: center; background: url('pic.jpg') no-repeat center center/cover; z-index: -1; color: white; font-size: larger; font-weight: bolder; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;">
+        <h1 class="h-primary">did someone<br> says summer...?</h1>
+
+        <button style="display: flex; font-size: larger; border: 0em; border-radius: 0ch; border-color: black;" class="btn">Shop DRESS</button>
+        <button style="display: flex; font-size: larger; border: 0em; border-radius: 0ex; border-color: aqua;" class="btn">Shop NOW</button>
+    </section>
+
+    <hr>
+
+    <div style="color: black; font-size: larger; font-style: italic;  background-color: pink; text-align: center; font-family: Arial, Helvetica, sans-serif;">
+        <h3>Shop by category</h3>
+        <div class="row">
+            <div class="column">
+                <img src="pic1.jpg" alt="pic" style="height: 90%; width: 80%;">
+            </div>
+            <div class="column">
+                <img src="pic2.jpg" alt="pic" style="height: 90%; width: 80%;">
+            </div>
+            <div class="column">
+                <img src="pic3.jpg" alt="pic" style="height: 90%; width: 80%;">
+            </div>
+        </div>
+        <button style="font-size: larger; border: 0em; border-radius: 15px; text-align: center; background-color: white;" class="btn">VIEW ALL</button>
+
+    </div>
+
+    <hr>
+
+    <h1 style="text-align: center; font-style: oblique;">Currently Treding</h1>
+
+    <div style="display: flex; padding-left: 5%;" class="row">
+        <div class="column">
+            <figure>
+                <figcaption style="font-size: larger; font-weight: bolder;">Basic Collection</figcaption>
+                <img src="pic4.jpg" alt="pic" style="height: 10%; width: 70%;">
+            </figure>
+        </div>
+
+
+        <div class="column">
+            <figure>
+                <figcaption style="font-size: larger; font-weight: bolder;">Floral Forever</figcaption>
+                <img src="pic4.jpg" alt="pic" style="height: 100%; width: 70%;">
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure>
+                <figcaption style="font-size: larger; font-weight: bolder;">Daily Wear</figcaption>
+                <img src="pic4.jpg" alt="pic" style="height: 100%; width: 70%;">
+            </figure>
+        </div>
+    </div>
+
+
+
+    <hr>
+
+
+
+
+    <div class="footer-container">
+
+        <div class="container">
+
+            <div class="item">
+                <div class="header">Get Started</div>
+                <br>
+                <div class="sub-items-container">
+                    <div class="sub-items">Home</div>
+                    <br>
+                    <div class="sub-items">Login</div>
+                    <br>
+                    <div class="sub-items">Signup</div>
+                    <br>
+                    <div class="sub-items">Offers</div>
+
+                </div>
+            </div>
+            <br>
+            <div class="item">
+                <div class="header">About Us</div>
+                <br>
+                <div class="sub-items-container">
+                    <div class="sub-items">Overview</div>
+                    <br>
+                    <div class="sub-items">Brands</div>
+                    <br>
+                    <div class="sub-items">Gallery</div>
+
+                </div>
+            </div>
+            <br>
+            <div class="item">
+                <div class="header">Support</div>
+                <br>
+                <div class="sub-items-container">
+                    <div class="sub-items">FAQ</div>
+                    <br>
+                    <div class="sub-items">Contact Us</div>
+
+                </div>
+            </div>
+            <br>
+            <div class="item">
+                <div class="header">Products</div>
+                <br>
+                <div class="sub-items-container">
+                    <div class="sub-items">Search Products</div>
+                    <br>
+                    <div class="sub-items">Services</div>
+
+                </div>
+            </div>
+            <br>
+            <div class="item">
+                <div class="header">Useful Links</div>
+                <br>
+                <div class="sub-items-container">
+                    <div class="sub-items">My Account</div>
+                    <br>
+                    <div class="sub-items">My Orders</div>
+                    <br>
+                    <div class="sub-items">Start Shopping</div>
+                    <br>
+                    <div class="sub-items">Site Map</div>
+
+                </div>
+            </div>
+            <br>
+            <div class="item">
+                <div class="header">Legal</div>
+                <br>
+                <div class="sub-items-container">
+                    <div class="sub-items">Privacy Policy</div>
+                    <br>
+                    <div class="sub-items">Terms & Condition</div>
+                    <br>
+                    <div class="sub-items">Copyright</div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+
+        <div class="copyright-container">
+            <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2021 <span style="font-style: italic;font-weight: bold;font-size: 18px;color: #00AAA2 ;">UAE Final Website</span></p>
+        </div>
+    </div>
+
+    <script>
+        function initMap() {
+            // Styles a map in night mode.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 40.674,
+                    lng: -73.945
+                },
+                zoom: 12,
+                styles: [{
+                    elementType: 'geometry',
+                    stylers: [{
+                        color: '#242f3e'
+                    }]
+                }, {
+                    elementType: 'labels.text.stroke',
+                    stylers: [{
+                        color: '#242f3e'
+                    }]
+                }, {
+                    elementType: 'labels.text.fill',
+                    stylers: [{
+                        color: '#746855'
+                    }]
+                }, {
+                    featureType: 'administrative.locality',
+                    elementType: 'labels.text.fill',
+                    stylers: [{
+                        color: '#d59563'
+                    }]
+                }, {
+                    featureType: 'poi',
+                    elementType: 'labels.text.fill',
+                    stylers: [{
+                        color: '#d59563'
+                    }]
+                }, {
+                    featureType: 'poi.park',
+                    elementType: 'geometry',
+                    stylers: [{
+                        color: '#263c3f'
+                    }]
+                }, {
+                    featureType: 'poi.park',
+                    elementType: 'labels.text.fill',
+                    stylers: [{
+                        color: '#6b9a76'
+                    }]
+                }, {
+                    featureType: 'road',
+                    elementType: 'geometry',
+                    stylers: [{
+                        color: '#38414e'
+                    }]
+                }, {
+                    featureType: 'road',
+                    elementType: 'geometry.stroke',
+                    stylers: [{
+                        color: '#212a37'
+                    }]
+                }, {
+                    featureType: 'road',
+                    elementType: 'labels.text.fill',
+                    stylers: [{
+                        color: '#9ca5b3'
+                    }]
+                }, {
+                    featureType: 'road.highway',
+                    elementType: 'geometry',
+                    stylers: [{
+                        color: '#746855'
+                    }]
+                }, {
+                    featureType: 'road.highway',
+                    elementType: 'geometry.stroke',
+                    stylers: [{
+                        color: '#1f2835'
+                    }]
+                }, {
+                    featureType: 'road.highway',
+                    elementType: 'labels.text.fill',
+                    stylers: [{
+                        color: '#f3d19c'
+                    }]
+                }, {
+                    featureType: 'transit',
+                    elementType: 'geometry',
+                    stylers: [{
+                        color: '#2f3948'
+                    }]
+                }, {
+                    featureType: 'transit.station',
+                    elementType: 'labels.text.fill',
+                    stylers: [{
+                        color: '#d59563'
+                    }]
+                }, {
+                    featureType: 'water',
+                    elementType: 'geometry',
+                    stylers: [{
+                        color: '#17263c'
+                    }]
+                }, {
+                    featureType: 'water',
+                    elementType: 'labels.text.fill',
+                    stylers: [{
+                        color: '#515c6d'
+                    }]
+                }, {
+                    featureType: 'water',
+                    elementType: 'labels.text.stroke',
+                    stylers: [{
+                        color: '#17263c'
+                    }]
+                }]
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+</body>
+
+</html>
